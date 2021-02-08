@@ -49,23 +49,39 @@
                 Grid.Column="10"
                 Grid.RowSpan="9"
                 Background="#152951" />
-        <TextBox Grid.Row="9"
-                 Grid.Column="1"
-                 Text="Start"
-                 VerticalAlignment="Center"
-                 HorizontalAlignment="Center"></TextBox>
 
         <StackPanel Grid.Row="9"
                     Grid.Column="1"
                     x:Name="posStart"
+                    Background="#152951"
                     Orientation="Horizontal">
-            <Button Content="test"
-                    Name="test"></Button>
+            <Button  Background="red"
+                     Width="5"
+                     Margin="3,10"
+                     Name="test"></Button>
+            <Button  Background="Green"
+                     Width="5"
+                     Margin="3,10"
+                     Name="test2"></Button>
+            <Button  Background="DeepPink"
+                     Width="5"
+                     Margin="3,10"
+                     Name="test3"></Button>
         </StackPanel>
         <StackPanel Grid.Row="9"
                     Grid.Column="2"
                     x:Name="pos1"
-                    Orientation="Horizontal"
-                    Tag="1"></StackPanel>
+                    Orientation="Vertical"
+                    Tag="1">
+            <Label Content="1" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="5"
+                    Grid.Column="7"
+                    x:Name="pos62"
+                    Orientation="Vertical"
+                    Tag="1">
+            <Label Content="62" />
+        </StackPanel>
     </Grid>
 </Window>
