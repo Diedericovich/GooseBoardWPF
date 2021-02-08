@@ -1,0 +1,71 @@
+﻿<Window x:Class="GooseBoardWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GooseBoardWPF"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid Background="Yellow"
+          ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="3"
+                Grid.Column="3"
+                Grid.ColumnSpan="4"
+                Grid.RowSpan="4"
+                Background="#152951" />
+        <Border Grid.Row="3"
+                Grid.Column="7"
+                Grid.RowSpan="2"
+                Background="#152951" />
+        <Border Grid.Row="1"
+                Grid.Column="10"
+                Grid.RowSpan="9"
+                Background="#152951" />
+        <TextBox Grid.Row="9"
+                 Grid.Column="1"
+                 Text="Start"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center"></TextBox>
+
+        <StackPanel Grid.Row="9"
+                    Grid.Column="1"
+                    x:Name="posStart"
+                    Orientation="Horizontal">
+            <Button Content="test"
+                    Name="test"></Button>
+        </StackPanel>
+        <StackPanel Grid.Row="9"
+                    Grid.Column="2"
+                    x:Name="pos1"
+                    Orientation="Horizontal"
+                    Tag="1"></StackPanel>
+    </Grid>
+</Window>
